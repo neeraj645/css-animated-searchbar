@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+<style>
+    
+body{
+    height: 100vh;
+    display: flex;
+    color: black;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:linear-gradient(rgb(220, 220, 255), rgb(232, 232, 255),  rgb(221, 225, 255)) no-repeat;
+}
+
+span{
+    background: linear-gradient(to right, #f6532b, #ad7bfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.search{
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    overflow: hidden;
+    color: transparent;
+    position: relative;
+    border-radius: 20px;
+    background-size: 22px;
+    transition-duration: 500ms;
+    background-repeat: no-repeat;
+    background-position: 45% 50%;
+    border:  2px solid rgb(245, 22, 145);
+    background:url(icons/search.gif) no-repeat transparent;
+}
+
+.search:hover{
+    cursor: pointer;
+    background-size: 22px;
+    border: 2px solid #f41313;
+    background-position: 45% 50%;
+    background: url(icons/search.gif) no-repeat transparent;
+}
+
+.search:focus{
+    width: 200px;
+    outline: none;
+    cursor: pointer;
+    padding-left: 40px;
+    background-size: 22px;
+    color: rgba(0, 0, 0, 0.683);
+    border:  2px solid #8f21f0;
+    background-color: transparent;
+    background-position: 10px 50%;
+    background: url(icons/search.gif) no-repeat;
+}
+</style>
+
+
+
+
+
+</head>
+<body>
+    <h1>Search Input <span>Effect</span></h1> 
+    <input type="search" class="search" id="">
+</body>
+</html>
